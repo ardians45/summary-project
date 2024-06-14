@@ -7,14 +7,16 @@ body {
 }
 
 .container {
-  display: flex;
-  height: 100vh;
+  /* display: flex;
+  height: 100vh; */
 }
 
 .sidebar {
-  width: 200px;
+  display: flex;
+  width: 100%;
   background-color: #181818;
-  padding: 20px;
+  /* padding: 20px; */
+  height: 100px;
 }
 
 .sidebar h2 {
@@ -101,11 +103,11 @@ body {
 .profile-card {
   background-color: #282828;
   padding: 20px;
-  border-radius: 5px;
   margin-bottom: 20px;
 }
+
 .profile-picture {
-  max-width: 100%;
+  max-width: 100px;
 }
 .profile-card .profile-picture {
   margin-bottom: 10px;
@@ -209,4 +211,49 @@ body {
 .card-link:hover {
   color: #333;
   background-color: white;
+}
+ul.navbar-menu {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 20px;
+  position: relative;
+}
+ul.navbar-menu li {
+  padding: 10px;
+}
+.profile {
+  background-color: #282828;
+  padding: 10px;
+  margin: 20px;
+  width: 100px; /* contoh lebar elemen pembungkus */
+  height: 100px; /* contoh tinggi elemen pembungkus */
+  overflow: hidden; /* untuk menyembunyikan bagian gambar yang berlebih */
+  position: relative;
+  border-radius: 50%;
+}
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* atau 'contain', tergantung kebutuhan */
+}
+.profile-card {
+  display: flex;
+  justify-content: space-between; /* Menempatkan elemen anak di kedua ujung elemen pembungkus */
+  align-items: center; /* Menyelaraskan elemen anak secara vertikal di tengah */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Anda bisa menyesuaikan lebar sesuai kebutuhan */
+  margin: 0 auto; /* Menempatkan elemen di tengah halaman */
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-email {
+  margin-left: auto; /* Menempatkan elemen ini di paling kanan */
+  font-style: italic;
 }
